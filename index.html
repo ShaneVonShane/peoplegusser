@@ -11,6 +11,41 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- Footer Links -->
+<footer style="margin-top: 40px; padding: 20px; text-align: center; font-family: sans-serif; border-top: 1px solid #eee; font-size: 14px;">
+  <p>© 2026 PeopleGuesser. All rights reserved.</p>
+  <a href="#privacy" onclick="document.getElementById('privacy-modal').style.display='block'; return false;" style="margin: 0 10px; color: #555;">Privacy Policy</a> |
+  <a href="#terms" onclick="document.getElementById('terms-modal').style.display='block'; return false;" style="margin: 0 10px; color: #555;">Terms of Service</a> |
+  <a href="#contact" onclick="document.getElementById('contact-modal').style.display='block'; return false;" style="margin: 0 10px; color: #555;">Contact</a>
+</footer>
+
+<!-- Privacy Policy Modal -->
+<div id="privacy-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999;">
+  <div style="background:#fff; width:80%; max-width:600px; margin:50px auto; padding:20px; border-radius:8px; max-height:80vh; overflow-y:auto; font-family:sans-serif;">
+    <h2>Privacy Policy</h2>
+    <p>This site uses third-party advertising cookies (such as Google AdSense) to serve ads based on your visit to this site. You may opt out of personalized advertising by visiting Google Ad Settings.</p>
+    <button onclick="document.getElementById('privacy-modal').style.display='none'" style="padding:8px 16px; margin-top:10px; cursor:pointer;">Close</button>
+  </div>
+</div>
+
+<!-- Terms Modal -->
+<div id="terms-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999;">
+  <div style="background:#fff; width:80%; max-width:600px; margin:50px auto; padding:20px; border-radius:8px; font-family:sans-serif;">
+    <h2>Terms of Service</h2>
+    <p>By using this website, you agree to use it strictly for entertainment purposes.</p>
+    <button onclick="document.getElementById('terms-modal').style.display='none'" style="padding:8px 16px; margin-top:10px; cursor:pointer;">Close</button>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999;">
+  <div style="background:#fff; width:80%; max-width:600px; margin:50px auto; padding:20px; border-radius:8px; font-family:sans-serif;">
+    <h2>Contact Us</h2>
+    <p>Questions or feedback? Email us at: <strong>support@peopleguesser.io</strong></p>
+    <button onclick="document.getElementById('contact-modal').style.display='none'" style="padding:8px 16px; margin-top:10px; cursor:pointer;">Close</button>
+  </div>
+</div>
+
   </body>
 </html>
 
