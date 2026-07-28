@@ -1,0 +1,6 @@
+{
+  "name": "People Guesser",
+  "description": "The ultimate photo quiz game where you guess people's names from their pictures.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
